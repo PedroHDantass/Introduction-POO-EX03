@@ -1,10 +1,21 @@
-﻿namespace Modulo01EX03
+﻿using System;
+namespace Modulo01EX03
 {
     internal class Aluno
     {
-        public string nome { get; set; }
-        public double Nota1 { get; set; }
-        public double Nota2 { get; set; }
-        public double Nota3 { get; set; }
+        public string Nome { get; set; }
+        public double N1, N2, N3;
+
+        public Aluno()
+        {
+
+        }
+        public Aluno(string nome, double n1, double n2, double n3)
+        {
+            Nome = nome;
+            N1 = n1;
+            N2 = n2;
+            N3 = n3;
+        }
     }
 }
